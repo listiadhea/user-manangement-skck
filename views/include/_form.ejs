@@ -1,0 +1,55 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Nama Lengkap</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Nama Lengkap">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Email</label>
+            <input type="text" name="email" value="" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Jenis Kelamin</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="Laki-Laki" >
+                <label for="radio-2" class="radio-label">Laki-Laki</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Perempuan" >
+                <label for="radio-3" class="radio-label">Perempuan</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Menikah" >
+                <label for="radio-4" class="radio-label">Menikah</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Belum Menikah" >
+                <label for="radio-5" class="radio-label">Belum Menikah</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="pekerjaan" class="text-light">Pekerjaan</label>
+            <input type="text" name="pekerjaan" value="" placeholder="Pelajar, Buruh, Wiraswasta, dll.">
+        </div>
+        <div class="form-group">
+            <label for="tempat_lahir" class="text-light">Tempat Lahir</label>
+            <input type="text" name="tempat_lahir" value="" placeholder="Tempat Lahir">
+        </div>
+        <div class="form-group">
+            <label for="tanggal_lahir" class="text-light">Tanggal Lahir</label>
+            <input type="date" name="tanggal_lahir" value="" placeholder="YYYY-MM-DD">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Simpan</button>
+        </div>
+
+    </div>
+</form>
